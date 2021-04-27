@@ -2,7 +2,10 @@ package com.example.musicalstructureapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
 
@@ -38,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
         // The ListView use the SongAdapter we created above, so that the
         // ListView will display list items for each Song in the list.
         listView.setAdapter(songAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Song songClicked = (Song) adapterView.getItemAtPosition(i);
+                Intent intent = new Intent(MainActivity.this, NowPlayingActivity.class);
+                intent.putExtra("song_name", songClicked.getSongName());
+                intent.putExtra("artist_name", songClicked.getArtistName());
+                intent.putExtra("song_art", songClicked.getSongArt());
+                startActivity(intent);
+            }
+        });
 
     }
 }

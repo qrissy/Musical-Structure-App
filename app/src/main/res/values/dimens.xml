@@ -6,4 +6,9 @@
     <!-- Screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="height">320dp</dimen>
+    <dimen name="relative_height_two">80dp</dimen>
+    <dimen name="relative_height">40dp</dimen>
+    <dimen name="radius">20dp</dimen>
 </resources>

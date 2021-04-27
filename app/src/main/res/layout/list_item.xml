@@ -3,43 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:orientation="horizontal"
     android:background="@color/blue_grey"
+    android:gravity="center_vertical"
     android:minHeight="@dimen/list_item_height"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal"
     android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingEnd="@dimen/activity_horizontal_margin">
 
     <ImageView
         android:id="@+id/song_art_image_view"
         style="@style/song_art"
-        android:src="@drawable/songs"
-        android:contentDescription="@string/song_art"/>
+        android:contentDescription="@string/song_art"
+        android:src="@drawable/songs" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/activity_vertical_margin"
         android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
         android:paddingEnd="@dimen/activity_vertical_margin">
 
         <TextView
             android:id="@+id/song_name_text_view"
+            style="@style/song_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Song Name"
-            style="@style/song_name"/>
+            tools:text="Song Name" />
 
         <TextView
             android:id="@+id/artist_name_text_view"
+            style="@style/artist_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Artist Name"
-            style="@style/artist_name"/>
+            tools:text="Artist Name" />
 
     </LinearLayout>
 </LinearLayout>

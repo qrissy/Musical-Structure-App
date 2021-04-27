@@ -18,12 +18,13 @@ public class SongAdapter extends ArrayAdapter<Song> {
     public SongAdapter(Activity context, ArrayList<Song> songs) {
         super(context, 0, songs);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }

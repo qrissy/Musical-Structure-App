@@ -12,78 +12,93 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:cardCornerRadius="@dimen/radius">
 
         <ImageView
             android:id="@+id/song_art_image_view"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="@dimen/height"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/songs"
-            android:contentDescription="@string/song_art"/>
+            android:contentDescription="@string/song_art"
+            android:src="@drawable/songs" />
 
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/song_name_text_view"
+        style="@style/song_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/song_name"
-        tools:text="Song Name"/>
+        tools:text="Song Name" />
 
     <TextView
         android:id="@+id/artist_name_text_view"
+        style="@style/artist_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/artist_name"
-        tools:text="Artist Name"/>
+        tools:text="Artist Name" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/relative_height"
+        android:layout_margin="@dimen/margin"
         android:background="@color/blue_grey">
 
         <TextView
+            style="@style/artist_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/seek_bar"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="@string/start_time"
-            style="@style/artist_name"/>
-        
+            android:layout_alignParentLeft="true"
+            android:text="@string/start_time" />
+
         <SeekBar
             android:id="@+id/seek_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            style="@style/artist_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/seek_bar"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:text="@string/end_time"
-            style="@style/artist_name"/>
+            android:layout_alignParentRight="true"
+            android:text="@string/end_time" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="@dimen/relative_height_two"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/blue_grey">
+
+        <Button
+            android:id="@+id/previous_button"
+            style="@style/button_style"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_baseline_fast_rewind_24" />
 
         <Button
             android:id="@+id/play_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            style="@style/button_style"
             android:layout_centerInParent="true"
-            android:background="@drawable/ic_baseline_play_arrow_24"/>
+            android:background="@drawable/ic_baseline_play_arrow_24" />
 
+        <Button
+            android:id="@+id/next_button"
+            style="@style/button_style"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_baseline_fast_forward_24" />
 
     </RelativeLayout>
-    
+
 </LinearLayout>

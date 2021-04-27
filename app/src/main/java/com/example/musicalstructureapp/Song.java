@@ -14,11 +14,9 @@ public class Song {
     /**
      * Create a new Song object
      *
-     * @param songName is the name of the song
-     *
+     * @param songName   is the name of the song
      * @param artistName is the name of the artist
-     *
-     * @param songArt is the Image of the song art
+     * @param songArt    is the Image of the song art
      */
     public Song(String songName, String artistName, int songArt) {
         mSongName = songName;
