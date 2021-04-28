@@ -5,4 +5,27 @@
     <string name="end_time">3:15</string>
     <string name="songs_label">Songs</string>
     <string name="now_playing_label">Now Playing</string>
+    <string name="kaya">Kaya</string>
+    <string name="bob_marley">Bob Marley</string>
+    <string name="peaches">Peaches</string>
+    <string name="justin_bieber">Justin Bieber</string>
+    <string name="on_me">On Me</string>
+    <string name="lil_baby">Lil Baby</string>
+    <string name="blinding_lights">Blinding Lights</string>
+    <string name="the_weeknd">The Weeknd</string>
+    <string name="love_yourz">Love Yourz</string>
+    <string name="j_cole">J. Cole</string>
+    <string name="beast_of_no_nation">Beast of No Nation</string>
+    <string name="fela">Fela</string>
+    <string name="bank_on_it">Bank On It</string>
+    <string name="burna_boy">Burna Boy</string>
+    <string name="up">Up</string>
+    <string name="cardi_b">Cardi B</string>
+    <string name="blessed">Blessed</string>
+    <string name="wiz_kid">Wiz Kid</string>
+    <string name="holy_ground">Holy Ground</string>
+    <string name="davido">Davido</string>
+    <string name="song_name">song_name</string>
+    <string name="artist_name">artist_name</string>
+    <string name="song_image">song_art</string>
 </resources>

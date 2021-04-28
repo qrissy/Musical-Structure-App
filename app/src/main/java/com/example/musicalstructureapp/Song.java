@@ -3,13 +3,13 @@ package com.example.musicalstructureapp;
 public class Song {
 
     // Name of the song
-    private String mSongName;
+    private String song_name;
 
     // Name of the artist
-    private String mArtistName;
+    private String artist_name;
 
     // Image of the song art
-    private int mSongArt;
+    private int song_art;
 
     /**
      * Create a new Song object
@@ -19,9 +19,9 @@ public class Song {
      * @param songArt    is the Image of the song art
      */
     public Song(String songName, String artistName, int songArt) {
-        mSongName = songName;
-        mArtistName = artistName;
-        mSongArt = songArt;
+        song_name = songName;
+        artist_name = artistName;
+        song_art = songArt;
     }
 
     /**
@@ -30,7 +30,7 @@ public class Song {
      * @return song name
      */
     public String getSongName() {
-        return mSongName;
+        return song_name;
     }
 
     /**
@@ -39,7 +39,7 @@ public class Song {
      * @return artist name
      */
     public String getArtistName() {
-        return mArtistName;
+        return artist_name;
     }
 
     /**
@@ -48,6 +48,6 @@ public class Song {
      * @return song art
      */
     public int getSongArt() {
-        return mSongArt;
+        return song_art;
     }
 }

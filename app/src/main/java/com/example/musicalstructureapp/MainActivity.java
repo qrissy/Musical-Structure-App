@@ -20,16 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
         // Create an array of songs
         ArrayList<Song> songs = new ArrayList<>();
-        songs.add(new Song("Kaya", "Bob Marley", R.drawable.kaya));
-        songs.add(new Song("Peaches", "Justin Bieber", R.drawable.peaches));
-        songs.add(new Song("On Me", "Lil Baby", R.drawable.on_me));
-        songs.add(new Song("Blinding Lights", "The Weeknd", R.drawable.blinding_lights));
-        songs.add(new Song("Love Yourz", "J. Cole", R.drawable.love_yours));
-        songs.add(new Song("Beast of No Nation", "Fela", R.drawable.beast_of_no_nation));
-        songs.add(new Song("Bank On It", "Burna Boy", R.drawable.bank_on_it));
-        songs.add(new Song("Up", "Cardi B", R.drawable.up));
-        songs.add(new Song("Blessed", "Wiz Kid", R.drawable.blessed));
-        songs.add(new Song("Holy Ground", "Davido", R.drawable.holy_ground));
+        songs.add(new Song(getString(R.string.kaya), getString(R.string.bob_marley), R.drawable.kaya));
+        songs.add(new Song(getString(R.string.peaches), getString(R.string.justin_bieber), R.drawable.peaches));
+        songs.add(new Song(getString(R.string.on_me), getString(R.string.lil_baby), R.drawable.on_me));
+        songs.add(new Song(getString(R.string.blinding_lights), getString(R.string.the_weeknd), R.drawable.blinding_lights));
+        songs.add(new Song(getString(R.string.love_yourz), getString(R.string.j_cole), R.drawable.love_yours));
+        songs.add(new Song(getString(R.string.beast_of_no_nation), getString(R.string.fela), R.drawable.beast_of_no_nation));
+        songs.add(new Song(getString(R.string.bank_on_it), getString(R.string.burna_boy), R.drawable.bank_on_it));
+        songs.add(new Song(getString(R.string.up), getString(R.string.cardi_b), R.drawable.up));
+        songs.add(new Song(getString(R.string.blessed), getString(R.string.wiz_kid), R.drawable.blessed));
+        songs.add(new Song(getString(R.string.holy_ground), getString(R.string.davido), R.drawable.holy_ground));
 
         // Create a SongAdapter, whose data source is a list of songs. The
         // adapter knows how to create list items for each item in the list.
@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Song songClicked = (Song) adapterView.getItemAtPosition(i);
                 Intent intent = new Intent(MainActivity.this, NowPlayingActivity.class);
-                intent.putExtra("song_name", songClicked.getSongName());
-                intent.putExtra("artist_name", songClicked.getArtistName());
-                intent.putExtra("song_art", songClicked.getSongArt());
+                intent.putExtra(getString(R.string.song_name), songClicked.getSongName());
+                intent.putExtra(getString(R.string.artist_name), songClicked.getArtistName());
+                intent.putExtra(getString(R.string.song_image), songClicked.getSongArt());
                 startActivity(intent);
             }
         });
