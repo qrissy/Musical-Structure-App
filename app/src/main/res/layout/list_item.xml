@@ -14,7 +14,8 @@
 
     <ImageView
         android:id="@+id/song_art_image_view"
-        style="@style/song_art"
+        android:layout_height="@dimen/layout_height"
+        android:layout_width="@dimen/layout_width"
         android:contentDescription="@string/song_art"
         android:src="@drawable/songs" />
 

@@ -11,4 +11,9 @@
     <dimen name="relative_height_two">80dp</dimen>
     <dimen name="relative_height">40dp</dimen>
     <dimen name="radius">20dp</dimen>
+    <dimen name="paddingLeft">16dp</dimen>
+
+    <!-- Image view layout -->
+    <dimen name="layout_width">120dp</dimen>
+    <dimen name="layout_height">120dp</dimen>
 </resources>
